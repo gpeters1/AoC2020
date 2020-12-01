@@ -1,5 +1,7 @@
-infile = open('figures.txt', 'r')
-numbers = [int(line) for line in infile.readlines()]
+import os
+
+numbers = [int(i.strip()) for i in open("figures.txt")]
+
 
 length = len(numbers)
 num1 = 0
